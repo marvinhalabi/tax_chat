@@ -1,45 +1,78 @@
+Här är en uppdaterad version av `README.md` med steg-för-steg-instruktioner för att köra appen lokalt med CMD och installera paket med `requirements.txt`:
+
+```markdown
 # Fråga om Redovisning 💰
 
-## Beskrivning
-"Fråga om Redovisning" är en interaktiv Streamlit-app som använder AI-teknologi från Tavily och OpenAI för att ge användare svar på frågor rörande skatt och redovisning. Genom att söka i pålitliga svenska källor ger appen användarna aktuella och noggranna svar.
+En interaktiv Streamlit-app för att ställa frågor om skatt och redovisning, som använder Tavily API och OpenAI:s GPT-4 för att ge svar baserat på aktuella och pålitliga källor.
+
+## Innehåll
+
+- [Funktioner](#funktioner)
+- [Installation](#installation)
+- [Användning](#användning)
+- [Licens](#licens)
 
 ## Funktioner
-- Sökning på svenska skatte- och redovisningssidor.
-- Generering av svar från OpenAI baserat på aktuella sökresultat.
-- En användarvänlig chattgränssnitt för att ställa frågor och få svar.
-- Dynamisk visning av chatthistorik.
 
-## Krav
-Innan du kör appen, se till att du har följande installerat:
+- Sökning av information från svenska skatte- och redovisningswebbplatser.
+- Generering av detaljerade svar från AI baserat på sökresultat.
+- Användarvänligt gränssnitt med chatthistorik.
 
-- Python 3.7 eller högre
-- [Streamlit](https://streamlit.io/)
-- [dotenv](https://pypi.org/project/python-dotenv/)
-- [requests](https://docs.python-requests.org/en/latest/)
-- [langchain](https://pypi.org/project/langchain/)
+## Installation
 
-Du kan installera nödvändiga paket genom att köra:
+Följ dessa steg för att köra appen lokalt:
 
-```bash
-pip install -r requirements.txt
-```
+1. **Klona repositoryt**:
+   Öppna CMD och kör följande kommando för att klona repositoryt:
 
-## Konfiguration
-1. **Skapa en `.env`-fil** i roten av ditt projekt.
-2. **Lägg till dina API-nycklar** i `.env`-filen:
-
-   ```plaintext
-   TAVILY_API_KEY=din_tavily_api_nyckel
-   OPENAI_API_KEY=din_openai_api_nyckel
+   ```bash
+   git clone https://github.com/marvinhalabi/tax_chat.git
+   cd tax_chat
    ```
 
-   *Ersätt `din_tavily_api_nyckel` och `din_openai_api_nyckel` med dina riktiga API-nycklar.*
+2. **Installera Python**:
+   Se till att du har Python installerat på din dator. Du kan ladda ner det från [python.org](https://www.python.org/downloads/). Under installationen, se till att kryssa i alternativet "Add Python to PATH".
 
-## Kör appen
-För att köra appen, använd följande kommando:
+3. **Skapa en virtuell miljö (valfritt men rekommenderat)**:
+   För att isolera dina projektberoenden kan du skapa en virtuell miljö:
 
-```bash
-streamlit run app.py
-```
+   ```bash
+   python -m venv venv
+   ```
 
-Appen öppnas i din webbläsare, där du kan ställa frågor om redovisning eller skatt.
+   Aktivera den virtuella miljön:
+
+   - För Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+
+   - För macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. **Installera krav**:
+   Installera nödvändiga paket med `requirements.txt`:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Skapa en `.env`-fil**:
+   Skapa en `.env`-fil i projektmappen och lägg till dina API-nycklar:
+
+   ```plaintext
+   TAVILY_API_KEY=din_nyckel
+   OPENAI_API_KEY=din_nyckel
+   ```
+
+   Se till att ersätta `din_nyckel` med dina faktiska API-nycklar.
+
+## Användning
+
+   För att starta appen, kör följande kommando i CMD:
+
+   ```bash
+   streamlit run app.py
+   ```
