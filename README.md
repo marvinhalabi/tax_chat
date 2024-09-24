@@ -4,9 +4,9 @@ En interaktiv Streamlit-app för att ställa frågor om skatt och redovisning, s
 
 ## Funktioner
 
-- Sökning av information från svenska skatte- och redovisningswebbplatser.
-- Generering av detaljerade svar från AI baserat på sökresultat.
-- Användarvänligt gränssnitt med chatthistorik.
+- 🔍 Sökning av information från svenska skatte- och redovisningswebbplatser.
+- 🧠 Generering av detaljerade svar från AI baserat på sökresultat.
+- 💬 Användarvänligt gränssnitt med chatthistorik.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Följ dessa steg för att köra appen lokalt:
    cd tax_chat
    ```
 
-2. **Installera Python**:
+2. **Installera Python 🐍**:
    Se till att du har Python installerat på din dator. Du kan ladda ner det från [python.org](https://www.python.org/downloads/). Under installationen, se till att kryssa i alternativet "Add Python to PATH".
 
 3. **Skapa en virtuell miljö (valfritt men rekommenderat)**:
@@ -57,9 +57,9 @@ Följ dessa steg för att köra appen lokalt:
    OPENAI_API_KEY=din_nyckel
    ```
 
-   Se till att ersätta `din_nyckel` med dina faktiska API-nycklar.
+   Se till att ersätta `din_nyckel` med dina faktiska API-nycklar 🔑
 
-## Användning
+## Användning 🌟
 
    För att starta appen, kör följande kommando i CMD:
 
