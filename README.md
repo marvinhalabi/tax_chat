@@ -1,16 +1,6 @@
-Här är en uppdaterad version av `README.md` med steg-för-steg-instruktioner för att köra appen lokalt med CMD och installera paket med `requirements.txt`:
-
-```markdown
 # Fråga om Redovisning 💰
 
 En interaktiv Streamlit-app för att ställa frågor om skatt och redovisning, som använder Tavily API och OpenAI:s GPT-4 för att ge svar baserat på aktuella och pålitliga källor.
-
-## Innehåll
-
-- [Funktioner](#funktioner)
-- [Installation](#installation)
-- [Användning](#användning)
-- [Licens](#licens)
 
 ## Funktioner
 
